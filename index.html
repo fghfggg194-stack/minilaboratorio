@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+        h1 {
+            text-align: justify;
+        }
+
+        section {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            padding: 50px;
+        }
+
+        #model p {
+            text-align: center;
+        }
+
+        #model h1 {
+            text-align: center;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 30px;
+        }
+
+        #experience {
+            background-color: #e1e2e4;
+        }
+
+        #model img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Oshine. </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="beauty" class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-6">
+                    <h1>Beauty is on the Outside</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.</p>
+                    <a href="#" class="btn btn-dark btn-lg">Book a Model Now</a>
+
+                </div>
+
+                <div class="col-6">
+                    <img src="img/modelo.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="container-fluid">
+            <div class="row d-flex align-items-center">
+                <div class="col-6">
+                    <img src="img/modelo2.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-6">
+                    <h1>25 years of Experience</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.</p>
+                    <a href="#" class="btn btn-light btn-lg">Book a Model Now</a>
+                </div>
+            </div>
+        </section>
+        <section id="model" class="container">
+            <h1>Our Model</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+            <div class="row">
+                <div class="col-3">
+                    <img src="img/modelo3.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="img/modelo4.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="img/modelo5.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="img/modelo6.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                Product
+            </button>
+
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                Service
+            </button>
+
+
+        </div>
+    </nav>
+
+    <div class="tab-content" id="nav-tabContent">
+
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+            tabindex="0">
+            <h1>Our Products</h1>
+            <p>We offer professional portfolios, digital lookbooks, and photo packages for fashion campaigns.</p>
+            <img src="img/modelo3.jpg" class="container" alt="">
+        </div>
+
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+            <h1>Our Service</h1>
+            <p>We provide fashion, commercial, and editorial modeling services for brands and events.</p>
+            <img src="img/modelo4.jpg" class="container" alt="">
+
+
+        </div>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        How can I book a model?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>"Book a Model Now"</strong>and complete the booking form.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Do your models have experience?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Yes, all our models are professionally trained.</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Can I choose a specific model?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Yes, you can choose the model you prefer</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+<footer>
+    <p>Monserrat Rodriguez - 12311095</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
